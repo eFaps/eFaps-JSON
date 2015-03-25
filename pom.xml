@@ -27,7 +27,7 @@
     <parent>
         <groupId>org.efaps</groupId>
         <artifactId>efaps-parent</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.1-SNAPSHOT</version>
     </parent>
     <packaging>jar</packaging>
     <artifactId>efaps-json</artifactId>
@@ -76,7 +76,7 @@
         <connection>scm:git:git://github.com/eFaps/eFaps-JSON.git</connection>
         <developerConnection>scm:git:git@github.com:eFaps/eFaps-JSON.git</developerConnection>
         <url>https://github.com/eFaps/eFaps-JSON/</url>
-        <tag>V3.2.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <site>
