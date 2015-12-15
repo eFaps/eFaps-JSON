@@ -1,0 +1,21 @@
+[ "org.efaps.json.data.DataList", [ {
+  "values" : [ {
+    "type" : "org.efaps.json.data.DecimalValue",
+    "key" : "Hallo",
+    "value" : 12593.2356
+  }, {
+    "type" : "org.efaps.json.data.LongValue",
+    "key" : "Demo",
+    "value" : 12593
+  } ]
+}, {
+  "values" : [ {
+    "type" : "org.efaps.json.data.DecimalValue",
+    "key" : "Hallo",
+    "value" : 12593.2356
+  }, {
+    "type" : "org.efaps.json.data.LongValue",
+    "key" : "Demo",
+    "value" : 12593
+  } ]
+} ] ]

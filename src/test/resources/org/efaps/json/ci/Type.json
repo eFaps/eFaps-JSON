@@ -1,0 +1,11 @@
+{
+  "type" : "org.efaps.json.ci.Type",
+  "name" : "typename",
+  "uuid" : "c97a8323-14b4-4a71-9095-20d864babcef",
+  "id" : 200,
+  "attributes" : [ {
+    "name" : "OID"
+  }, {
+    "name" : "Name"
+  } ]
+}

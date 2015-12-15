@@ -21,8 +21,12 @@
 package org.efaps.json.data;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import org.efaps.json.AbstractEFapsJSON;
 
 /**
  * TODO comment!
@@ -30,13 +34,159 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author The eFaps Team
  * @version $Id$
  */
-@XmlRootElement(name = "DataList")
 public class DataList
-    extends ArrayList<ObjectData>
+    extends AbstractEFapsJSON
+    implements List<ObjectData>
 {
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
 
+    /** The data. */
+    private final List<ObjectData> data = new ArrayList<>();
+
+    /**
+     * Adds the.
+     *
+     * @param _data the data
+     * @return
+     */
+    @Override
+    public boolean add(final ObjectData _data)
+    {
+        return this.data.add(_data);
+    }
+
+    @Override
+    public void add(final int _index,
+                    final ObjectData _element)
+    {
+        this.data.add(_index, _element);
+    }
+
+    @Override
+    public boolean addAll(final Collection<? extends ObjectData> _c)
+    {
+        return  this.data.addAll(_c);
+    }
+
+    @Override
+    public boolean addAll(final int _index,
+                          final Collection<? extends ObjectData> _c)
+    {
+        return  this.data.addAll(_index, _c);
+    }
+
+    @Override
+    public void clear()
+    {
+        this.data.clear();
+    }
+
+    @Override
+    public boolean contains(final Object _o)
+    {
+        return  this.data.contains(_o);
+    }
+
+    @Override
+    public boolean containsAll(final Collection<?> _c)
+    {
+        return this.data.containsAll(_c);
+    }
+
+    @Override
+    public ObjectData get(final int _index)
+    {
+        return this.data.get(_index);
+    }
+
+    @Override
+    public int indexOf(final Object _o)
+    {
+        return this.data.indexOf(_o);
+    }
+
+    @Override
+    public boolean isEmpty()
+    {
+        return this.data.isEmpty();
+    }
+
+    @Override
+    public Iterator<ObjectData> iterator()
+    {
+        return this.data.iterator();
+    }
+
+    @Override
+    public int lastIndexOf(final Object _o)
+    {
+        return this.data.lastIndexOf(_o);
+    }
+
+    @Override
+    public ListIterator<ObjectData> listIterator()
+    {
+        return this.data.listIterator();
+    }
+
+    @Override
+    public ListIterator<ObjectData> listIterator(final int _index)
+    {
+        return this.data.listIterator(_index);
+    }
+
+    @Override
+    public boolean remove(final Object _o)
+    {
+        return this.data.remove(_o);
+    }
+
+    @Override
+    public ObjectData remove(final int _index)
+    {
+        return this.data.remove(_index);
+    }
+
+    @Override
+    public boolean removeAll(final Collection<?> _c)
+    {
+        return this.data.removeAll(_c);
+    }
+
+    @Override
+    public boolean retainAll(final Collection<?> _c)
+    {
+        return this.data.retainAll(_c);
+    }
+
+    @Override
+    public ObjectData set(final int _index,
+                          final ObjectData _element)
+    {
+        return this.data.set(_index, _element);
+    }
+
+    @Override
+    public int size()
+    {
+        return this.data.size();
+    }
+
+    @Override
+    public List<ObjectData> subList(final int _fromIndex,
+                                    final int _toIndex)
+    {
+        return this.data.subList(_fromIndex, _toIndex);
+    }
+
+    @Override
+    public Object[] toArray()
+    {
+        return this.data.toArray();
+    }
+
+    @Override
+    public <T> T[] toArray(final T[] _a)
+    {
+        return this.data.toArray(_a);
+    }
 }

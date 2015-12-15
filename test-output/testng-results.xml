@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3429" started-at="2015-12-15T00:52:13Z" finished-at="2015-12-15T00:52:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3429" started-at="2015-12-15T00:52:13Z" finished-at="2015-12-15T00:52:17Z">
+      <class name="org.efaps.json.data.Data">
+        <test-method status="PASS" signature="bigdecimal()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="bigdecimal" duration-ms="573" started-at="2015-12-14T19:52:13Z" finished-at="2015-12-14T19:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bigdecimal -->
+        <test-method status="PASS" signature="bigdecimalread()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="bigdecimalread" duration-ms="32" started-at="2015-12-14T19:52:14Z" finished-at="2015-12-14T19:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bigdecimalread -->
+        <test-method status="PASS" signature="bigdecimalread2()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="bigdecimalread2" duration-ms="2" started-at="2015-12-14T19:52:14Z" finished-at="2015-12-14T19:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bigdecimalread2 -->
+        <test-method status="PASS" signature="map1()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="map1" duration-ms="50" started-at="2015-12-14T19:52:14Z" finished-at="2015-12-14T19:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- map1 -->
+        <test-method status="PASS" signature="object1()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="object1" duration-ms="58" started-at="2015-12-14T19:52:14Z" finished-at="2015-12-14T19:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- object1 -->
+        <test-method status="PASS" signature="objects()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="objects" duration-ms="18" started-at="2015-12-14T19:52:14Z" finished-at="2015-12-14T19:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objects -->
+        <test-method status="PASS" signature="objectsIn()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="objectsIn" duration-ms="2627" started-at="2015-12-14T19:52:14Z" finished-at="2015-12-14T19:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectsIn -->
+        <test-method status="PASS" signature="one()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="one" duration-ms="8" started-at="2015-12-14T19:52:17Z" finished-at="2015-12-14T19:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- one -->
+        <test-method status="PASS" signature="two()[pri:0, instance:org.efaps.json.data.Data@4db3ea55]" name="two" duration-ms="4" started-at="2015-12-14T19:52:17Z" finished-at="2015-12-14T19:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- two -->
+      </class> <!-- org.efaps.json.data.Data -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

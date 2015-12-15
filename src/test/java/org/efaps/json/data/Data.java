@@ -18,7 +18,7 @@
  * Last Changed By: $Author$
  */
 
-package org.efaps.json;
+package org.efaps.json.data;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -26,15 +26,10 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.efaps.json.data.DataList;
-import org.efaps.json.data.DecimalValue;
-import org.efaps.json.data.LongValue;
-import org.efaps.json.data.ObjectData;
 import org.joda.time.DateTime;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -162,7 +157,6 @@ public class Data
         final ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
         mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-        mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, true);
 
         mapper.registerModule(new JodaModule());
 
@@ -201,8 +195,6 @@ public class Data
         throws ParseException, JsonParseException, JsonMappingException, IOException
     {
         final ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-        mapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, true);
         mapper.registerModule(new JodaModule());
 
         final DataList bean = mapper.readValue(Data.class.getResourceAsStream("ObjectIn.json"), DataList.class);
