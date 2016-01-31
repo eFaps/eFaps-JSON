@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 import org.efaps.json.AbstractEFapsJSON;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
