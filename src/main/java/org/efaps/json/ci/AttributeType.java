@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2015 The eFaps Team
+ * Copyright 2003 - 2016 The eFaps Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,26 +14,29 @@
  * limitations under the License.
  *
  */
+
+
 package org.efaps.json.ci;
 
+
 /**
- * The Class Attribute.
+ * TODO comment!
  *
  * @author The eFaps Team
  */
-public class Attribute
+public class AttributeType
 {
 
     /** The name. */
     private String name;
 
-    /** The type. */
-    private AttributeType type;
+    /** The info. */
+    private String info;
 
     /**
-     * Gets the name.
+     * Getter method for the instance variable {@link #name}.
      *
-     * @return the name
+     * @return value of instance variable {@link #name}
      */
     public String getName()
     {
@@ -41,36 +44,36 @@ public class Attribute
     }
 
     /**
-     * Sets the name.
+     * Setter method for instance variable {@link #name}.
      *
-     * @param _name the new name
-     * @return the attribute
+     * @param _name value for instance variable {@link #name}
+     * @return the attribute type
      */
-    public Attribute setName(final String _name)
+    public AttributeType setName(final String _name)
     {
         this.name = _name;
         return this;
     }
 
     /**
-     * Getter method for the instance variable {@link #type}.
+     * Getter method for the instance variable {@link #info}.
      *
-     * @return value of instance variable {@link #type}
+     * @return value of instance variable {@link #info}
      */
-    public AttributeType getType()
+    public String getInfo()
     {
-        return this.type;
+        return this.info == null ? "" : this.info;
     }
 
     /**
-     * Setter method for instance variable {@link #type}.
+     * Setter method for instance variable {@link #info}.
      *
-     * @param _type value for instance variable {@link #type}
-     * @return the attribute
+     * @param _info value for instance variable {@link #info}
+     * @return the attribute type
      */
-    public Attribute setType(final AttributeType _type)
+    public AttributeType setInfo(final String _info)
     {
-        this.type = _type;
+        this.info = _info;
         return this;
     }
 }
