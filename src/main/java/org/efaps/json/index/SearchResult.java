@@ -16,6 +16,7 @@
  */
 package org.efaps.json.index;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +29,11 @@ import org.efaps.json.AbstractEFapsJSON;
  */
 public class SearchResult
     extends AbstractEFapsJSON
+    implements Serializable
 {
+
+    /** The Constant serialVersionUID. */
+    private static final long serialVersionUID = 1L;
 
     /** The elements. */
     private final List<Element> elements = new ArrayList<>();
@@ -47,7 +52,10 @@ public class SearchResult
      * The Class Element.
      */
     public static class Element
+        implements Serializable
     {
+        /** The Constant serialVersionUID. */
+        private static final long serialVersionUID = 1L;
 
         /** The oid. */
         private String oid;
