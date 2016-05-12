@@ -18,7 +18,9 @@ package org.efaps.json.index;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.efaps.json.AbstractEFapsJSON;
 
@@ -63,6 +65,9 @@ public class SearchResult
         /** The text. */
         private String text;
 
+        /** The fields. */
+        private final Map<String, String> fields = new HashMap<>();
+
         /**
          * Gets the oid.
          *
@@ -104,6 +109,30 @@ public class SearchResult
         public Element setText(final String _text)
         {
             this.text = _text;
+            return this;
+        }
+
+        /**
+         * Gets the fields.
+         *
+         * @return the fields
+         */
+        public Map<String, String> getFields()
+        {
+            return this.fields;
+        }
+
+        /**
+         * Adds the field.
+         *
+         * @param _key the key
+         * @param _value the value
+         * @return the element
+         */
+        public Element addField(final String _key,
+                                final String _value)
+        {
+            this.fields.put(_key, _value);
             return this;
         }
 
