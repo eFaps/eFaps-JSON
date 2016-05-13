@@ -40,6 +40,29 @@ public class SearchResult
     /** The elements. */
     private final List<Element> elements = new ArrayList<>();
 
+    /** The hit count. */
+    private long hitCount;
+
+    /**
+     * Gets the hit count.
+     *
+     * @return the hit count
+     */
+    public long getHitCount()
+    {
+        return this.hitCount;
+    }
+
+    /**
+     * Sets the hit count.
+     *
+     * @param _hitCount the new hit count
+     */
+    public void setHitCount(final long _hitCount)
+    {
+        this.hitCount = _hitCount;
+    }
+
     /**
      * Gets the elements.
      *
