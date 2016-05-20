@@ -18,11 +18,11 @@ package org.efaps.json.index;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.efaps.json.AbstractEFapsJSON;
+import org.efaps.json.index.result.Dimension;
+import org.efaps.json.index.result.Element;
 
 /**
  * The Class SearchResult.
@@ -39,6 +39,10 @@ public class SearchResult
 
     /** The elements. */
     private final List<Element> elements = new ArrayList<>();
+
+    /** The elements. */
+    private final List<Dimension> dimensions = new ArrayList<>();
+
 
     /** The hit count. */
     private long hitCount;
@@ -74,95 +78,19 @@ public class SearchResult
     }
 
     /**
-     * The Class Element.
+     * Getter method for the instance variable {@link #dimensions}.
+     *
+     * @return value of instance variable {@link #dimensions}
      */
-    public static class Element
-        implements Serializable
+    public List<Dimension> getDimensions()
     {
-        /** The Constant serialVersionUID. */
-        private static final long serialVersionUID = 1L;
+        return this.dimensions;
+    }
 
-        /** The oid. */
-        private String oid;
-
-        /** The text. */
-        private String text;
-
-        /** The fields. */
-        private final Map<String, String> fields = new HashMap<>();
-
-        /**
-         * Gets the oid.
-         *
-         * @return the oid
-         */
-        public String getOid()
-        {
-            return this.oid;
-        }
-
-        /**
-         * Sets the oid.
-         *
-         * @param _oid the oid
-         * @return the element
-         */
-        public Element setOid(final String _oid)
-        {
-            this.oid = _oid;
-            return this;
-        }
-
-        /**
-         * Gets the text.
-         *
-         * @return the text
-         */
-        public String getText()
-        {
-            return this.text;
-        }
-
-        /**
-         * Sets the text.
-         *
-         * @param _text the text
-         * @return the element
-         */
-        public Element setText(final String _text)
-        {
-            this.text = _text;
-            return this;
-        }
-
-        /**
-         * Gets the fields.
-         *
-         * @return the fields
-         */
-        public Map<String, String> getFields()
-        {
-            return this.fields;
-        }
-
-        /**
-         * Adds the field.
-         *
-         * @param _key the key
-         * @param _value the value
-         * @return the element
-         */
-        public Element addField(final String _key,
-                                final String _value)
-        {
-            this.fields.put(_key, _value);
-            return this;
-        }
-
-        @Override
-        public String toString()
-        {
-            return String.format("OID: %s, Text: %s", this.oid, this.text);
-        }
+    @Override
+    public String toString()
+    {
+        return String.format("HitCount: %s, Dimensions: %s, Elements: %s", this.getHitCount(), this.getDimensions(),
+                        this.getElements());
     }
 }
