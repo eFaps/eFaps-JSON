@@ -42,6 +42,9 @@ public class DimValue
     /** The value. */
     private Integer value;
 
+    /** The path. */
+    private String[] path;
+
     /**
      * Getter method for the instance variable {@link #label}.
      *
@@ -94,6 +97,26 @@ public class DimValue
     public Set<DimValue> getChildren()
     {
         return this.children;
+    }
+
+    /**
+     * Gets the path.
+     *
+     * @return the path
+     */
+    public String[] getPath()
+    {
+        return this.path;
+    }
+
+    /**
+     * Sets the path.
+     *
+     * @param _path the new path
+     */
+    public void setPath(final String[] _path)
+    {
+        this.path = _path;
     }
 
     @Override
