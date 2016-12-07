@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2014 The eFaps Team
+ * Copyright 2003 - 2016 The eFaps Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,20 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Revision:        $Rev: 14215 $
- * Last Changed:    $Date: 2014-10-13 17:21:01 -0500 (Mon, 13 Oct 2014) $
- * Last Changed By: $Author: jan@moxter.net $
  */
-
 package org.efaps.json.data;
-
-
 
 /**
  * TODO comment!
  *
  * @author The eFaps Team
- * @version $Id: LongValue.java 14215 2014-10-13 22:21:01Z jan@moxter.net $
  */
 public class BooleanValue
     extends AbstractValue<Boolean>

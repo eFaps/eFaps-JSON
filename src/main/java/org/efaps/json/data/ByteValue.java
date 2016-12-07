@@ -14,19 +14,19 @@
  * limitations under the License.
  *
  */
-
 package org.efaps.json.data;
 
 /**
- * TODO comment!
+ * The Class ByteValue.
  *
  * @author The eFaps Team
  */
-public class IntegerValue
-    extends AbstractValue<Integer>
+public class ByteValue
+    extends AbstractValue<byte[]>
 {
 
-    private Integer value;
+    /** The value. */
+    private byte[] value;
 
     /**
      * Getter method for the instance variable {@link #value}.
@@ -34,7 +34,7 @@ public class IntegerValue
      * @return value of instance variable {@link #value}
      */
     @Override
-    public Integer getValue()
+    public byte[] getValue()
     {
         return this.value;
     }
@@ -45,7 +45,7 @@ public class IntegerValue
      * @param _value value for instance variable {@link #value}
      */
     @Override
-    public IntegerValue setValue(final Integer _value)
+    public ByteValue setValue(final byte[] _value)
     {
         this.value = _value;
         return this;
