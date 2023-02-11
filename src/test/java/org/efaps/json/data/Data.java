@@ -143,7 +143,7 @@ public class Data
         data.getValues().add(value);
 
         final LongValue value2 = new LongValue();
-        value2.setValue(new Long(12593));
+        value2.setValue(Long.valueOf(12593));
         value2.setKey("Demo");
         data.getValues().add(value2);
         mapper.writeValue(System.out, data);
@@ -168,7 +168,7 @@ public class Data
         data.getValues().add(value);
 
         final LongValue value2 = new LongValue();
-        value2.setValue(new Long(12593));
+        value2.setValue(Long.valueOf(12593));
         value2.setKey("Demo");
         data.getValues().add(value2);
 
@@ -181,7 +181,7 @@ public class Data
         data2.getValues().add(value3);
 
         final LongValue value4 = new LongValue();
-        value4.setValue(new Long(12593));
+        value4.setValue(Long.valueOf(12593));
         value4.setKey("Demo");
         data2.getValues().add(value4);
         dataList.add(data2);
